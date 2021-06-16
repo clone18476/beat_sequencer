@@ -1,0 +1,60 @@
+h1{
+    color: white;
+}
+
+.sfx {
+  top: 5%;
+  position: absolute;
+  left: 5%;
+  background-color: black;
+  padding:20px;
+  border-radius: 15px;
+}
+.sfx-bar{
+    display: flex;
+    flex: 8;
+    flex-direction: column;
+}
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+.bottom{
+    margin-top: 7px;
+}
+.SOUNDSDIV{
+    top: 100PX;
+    position: absolute;
+    width: max-content;
+}
+
+input:checked:before {
+  filter: blur(10px);
+  opacity: 1;
+  animation: animate 12s linear infinite;
+}
+input:before {
+  content: "";
+  position: absolute;   
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  transition: 0.5s;
+}
+input {
+  height: 60px;
+  width: 60px;
+  transform: translate(0%, 0%);
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  cursor: pointer;
+  margin-right: 5px;
+}
