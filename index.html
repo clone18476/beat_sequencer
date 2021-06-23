@@ -21,6 +21,16 @@
               <input type="checkbox" />
               <input type="checkbox" />
             </div>
+            <div class="middle">
+              <input type="checkbox" />
+              <input type="checkbox" />
+              <input type="checkbox" />
+              <input type="checkbox" />
+              <input type="checkbox" />
+              <input type="checkbox" />
+              <input type="checkbox" />
+              <input type="checkbox" />
+            </div>
             <div class="bottom">
               <input type="checkbox" />
               <input type="checkbox" />
@@ -36,5 +46,19 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.32/Tone.js"></script>
     <script src="./app.js"></script>
+  </body>
+  <body>
+    <button> Click to Play 
+      <script>
+        let button = document.body.getElementsByTagName('button');
+        button[0].addEventListener('click', function(){
+        const synth = new Tone.Synth();
+        synth.toMaster();
+
+        synth.triggerAttackRelease(); 
+        })
+      </script>
+
+    </button>
   </body>
 </html>

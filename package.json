@@ -4,6 +4,7 @@
     "express": "^4.17.1",
     "http-server": "^0.12.3",
     "serve-static": "^1.14.1",
+    "startaudiocontext": "^1.2.1",
     "tone": "^14.7.77"
   },
   "name": "beat_sequencer",
