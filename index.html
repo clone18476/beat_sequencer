@@ -55,7 +55,19 @@
         const synth = new Tone.Synth();
         synth.toMaster();
 
-        synth.triggerAttackRelease(); 
+        synth.triggerAttack(); 
+        })
+      </script>
+
+    </button>
+    <button> Click to Stop 
+      <script>
+        let button = document.body.getElementsByTagName('button');
+        button[0].addEventListener('click', function(){
+        const synth = new Tone.Synth();
+        synth.toMaster();
+
+        synth.triggerRelease(); 
         })
       </script>
 
